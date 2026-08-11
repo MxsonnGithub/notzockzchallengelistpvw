@@ -43,7 +43,13 @@
             "link": "https://youtu.be/SyWU1mE816o",
             "percent": 100,
             "hz": 240
-          }
+          },
+                                                   {
+            "user": "[TTG] ymg",
+            "link": "https://www.youtube.com/watch?v=ZNOJ9EDPAk4",
+            "percent": 100,
+            "hz": 120
+             }
 
     ]
 }
