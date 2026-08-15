@@ -55,7 +55,7 @@ header{display:flex;align-items:center;gap:18px;padding:16px 28px;background:tra
 .nav{display:flex;align-items:center;gap:12px;flex:1}
 
 /* Page layout: pages render their own <main> elements; make them a 3-column canvas on wide screens */
-main{display:grid;padding:32px;box-sizing:border-box;grid-template-columns: minmax(16rem,1fr) minmax(40rem,2fr) minmax(16rem,1fr);column-gap:2rem;width:100%;max-width:1400px;margin:24px auto}
+main{display:grid;padding:20px;box-sizing:border-box;grid-template-columns: minmax(16rem,1fr) minmax(40rem,2fr) minmax(16rem,1fr);column-gap:1.5rem;width:100%;max-width:1400px;margin:16px auto}
 
 @media screen and (max-width:980px){
     main{display:block;padding:20px;margin:12px}

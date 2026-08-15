@@ -48,6 +48,10 @@ export default {
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <div class="video-frame">
                         <div class="video-label type-label-sm">SHOWCASE</div>
+                        <span class="bracket tl"></span>
+                        <span class="bracket tr"></span>
+                        <span class="bracket bl"></span>
+                        <span class="bracket br"></span>
                         <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     </div>
                     <ul class="stats">
