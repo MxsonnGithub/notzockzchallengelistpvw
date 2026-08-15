@@ -1,12 +1,12 @@
 h1,
 .type-h1,
-.type-headline-lg {
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 51.4285714286px;
-    line-height: 52px;
-    font-weight: 700;
-    letter-spacing: -2px;
-    -webkit-font-smoothing: subpixel-antialiased;
+.type-headline-lg{
+    font-family: 'Lexend Deca', Inter, sans-serif;
+    font-size:clamp(32px,5.2vw,52px);
+    line-height:1.02;
+    font-weight:800;
+    letter-spacing:-1px;
+    -webkit-font-smoothing:antialiased;
 }
 h1::before,
 .type-h1::before,
@@ -14,16 +14,15 @@ h1::before,
     content: "";
     margin-bottom: -0.1805555556em;
     display: table;
-}
-h1::after,
-.type-h1::after,
-.type-headline-lg::after {
-    content: "";
-    margin-top: -0.1305555556em;
-    display: table;
-}
-
 h2,
+.type-h2,
+.type-headline-md{
+    font-family: 'Lexend Deca', Inter, sans-serif;
+    font-size:clamp(20px,3.2vw,34px);
+    line-height:1.12;
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+}
 .type-h2,
 .type-headline-md {
     font-family: "Lexend Deca", sans-serif;
@@ -208,13 +207,7 @@ input[type="number"],
 }
 
 p,
-.type-body {
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 17.1428571429px;
-    line-height: 28px;
-    font-weight: 500;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
+.type-body{font-family:Inter, 'Lexend Deca', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;font-size:clamp(14px,1.8vw,17px);line-height:1.6;color:var(--text);font-weight:500;-webkit-font-smoothing:antialiased}
 p::before,
 .type-body::before {
     content: "";
