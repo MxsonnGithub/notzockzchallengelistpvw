@@ -1,7 +1,7 @@
 :root{
-    /* Color system */
-    --bg:#0f1724; /* deep navy */
-    --bg-2:#0b1220; /* subtle contrast */
+    /* Color system (neutral, flat) */
+    --bg:#0f1419; /* neutral charcoal */
+    --bg-2:#0b0f13; /* slightly darker surface */
     --surface: rgba(255,255,255,0.01);
     --muted:#9aa6b2;
     --text:#e6eef6;
