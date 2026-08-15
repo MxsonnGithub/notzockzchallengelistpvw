@@ -1,10 +1,10 @@
 .nav{display:flex;align-items:center;gap:18px}
-.nav .nav__tab{padding:8px 14px;border-radius:999px;background:transparent;color:var(--muted);transition:all 160ms;display:inline-flex;align-items:center;gap:8px}
-.nav .nav__tab.router-link-active{background:linear-gradient(90deg,rgba(124,92,255,0.12),rgba(0,212,255,0.06));color:var(--text);box-shadow:0 6px 18px rgba(9,10,26,0.5)}
-.nav .nav__tab:hover{color:var(--text);transform:translateY(-2px)}
+.nav .nav__tab{padding:8px 12px;border-radius:10px;background:transparent;color:var(--muted);transition:all 140ms;display:inline-flex;align-items:center;gap:8px}
+.nav .nav__tab.router-link-active{background:rgba(124,92,255,0.06);color:var(--text);box-shadow:none}
+.nav .nav__tab:hover{color:var(--text)}
 .nav .nav__actions{flex:1;display:flex;align-items:center;justify-content:flex-end;gap:12px}
-.nav .nav__actions .nav__icon{height:42px;width:42px;border:none;background:transparent;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 140ms}
-.nav .nav__actions .nav__icon:hover{background:rgba(255,255,255,0.03)}
+.nav .nav__actions .nav__icon{height:38px;width:38px;border:none;background:transparent;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 120ms}
+.nav .nav__actions .nav__icon:hover{background:rgba(255,255,255,0.02)}
 .nav .nav__actions .nav__icon img{height:1.25rem}
-.nav .nav__actions .nav__cta{margin-left:1rem;padding:0.6rem 1rem;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;border-radius:10px;box-shadow:0 10px 30px rgba(9,10,26,0.6)}
-.nav .nav__actions .nav__cta:hover{transform:translateY(-3px)}
+.nav .nav__actions .nav__cta{margin-left:1rem;padding:0.5rem 0.9rem;background:var(--accent);color:white;border-radius:8px;box-shadow:0 8px 22px rgba(2,6,23,0.35)}
+.nav .nav__actions .nav__cta:hover{transform:translateY(-2px)}
