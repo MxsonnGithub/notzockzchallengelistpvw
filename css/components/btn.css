@@ -1,5 +1,5 @@
-.btn{border:0;cursor:pointer;font:inherit;padding:0.6rem 1rem;margin:0;background:var(--accent);color:white;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.45);transition:transform 160ms ease,box-shadow 160ms;display:inline-flex;align-items:center;gap:10px}
+.btn{border:0;cursor:pointer;font:inherit;padding:0.6rem 1rem;margin:0;background:var(--accent);color:white;border-radius:8px;box-shadow:0 4px 10px rgba(2,6,23,0.12);transition:transform 120ms ease,box-shadow 120ms;display:inline-flex;align-items:center;gap:10px}
 .btn:disabled{opacity:0.5;cursor:not-allowed;transform:none}
 .btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 12px 30px rgba(2,6,23,0.45)}
 .btn:active{transform:translateY(-1px)}
-.btn:focus{outline:3px solid rgba(124,92,255,0.12);outline-offset:3px}
+.btn:focus{outline:2px solid rgba(91,114,128,0.12);outline-offset:3px}
