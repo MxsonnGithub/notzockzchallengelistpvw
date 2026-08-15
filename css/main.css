@@ -13,6 +13,19 @@
     --shadow-lg: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
 }
 
+/* Backwards-compatible variable aliases used by page CSS */
+:root{
+    --color-background: var(--bg-2);
+    --color-on-background: var(--text);
+    --color-background-hover: rgba(255,255,255,0.02);
+    --color-on-background-hover: var(--muted);
+    --color-primary: var(--accent);
+    --color-on-primary: white;
+    --color-primary-disabled: rgba(0,0,0,0.2);
+    --color-error: var(--error);
+    --color-on-error: white;
+}
+
 main.dark, header.dark, :root[data-theme="dark"]{
     color-scheme: dark;
     --bg:#0b1220;
@@ -35,7 +48,12 @@ header{display:flex;align-items:center;gap:24px;padding:20px 32px;background:tra
 
 .nav{display:flex;align-items:center;gap:12px;flex:1}
 
-main{display:block;padding:32px;max-width:1200px;margin:24px auto;box-sizing:border-box}
+/* Page layout: pages render their own <main> elements; make them a 3-column canvas on wide screens */
+main{display:grid;padding:32px;box-sizing:border-box;grid-template-columns: minmax(16rem,1fr) minmax(40rem,2fr) minmax(16rem,1fr);column-gap:2rem;width:100%;max-width:1400px;margin:24px auto}
+
+@media screen and (max-width:980px){
+    main{display:block;padding:20px;margin:12px}
+}
 
 /* Cards */
 .card{background:var(--bg-2);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,0.02)}
