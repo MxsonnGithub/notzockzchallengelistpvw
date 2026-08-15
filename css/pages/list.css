@@ -8,7 +8,25 @@
 .page-list .list .rank{width:48px;padding-right:12px;text-align:right;color:var(--muted)}
 .page-list .list .level{width:100%}
 .page-list .list .level button{background:transparent;border:0;padding:0;width:100%;text-align:left}
-.page-list .list .level .level-card{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:var(--bg-2);border:1px solid rgba(255,255,255,0.02)}
+.page-list .list .level .level-card{display:flex;align-items:center;gap:12px;padding:12px;border-radius:4px;background:var(--bg-2);border:1px solid rgba(255,255,255,0.02)}
+
+/* Top rank plates */
+.page-list .list tr:nth-child(1) .rank p{display:inline-block;padding:8px 10px;border-radius:2px;background:var(--gd-accent-muted);color:var(--text);font-family:var(--font-display);font-weight:700;font-size:0.95rem}
+.page-list .list tr:nth-child(2) .rank p,.page-list .list tr:nth-child(3) .rank p{display:inline-block;padding:6px 8px;border-radius:2px;background:rgba(255,255,255,0.02);color:var(--text);font-family:var(--font-display);font-weight:600}
+
+/* Active row highlighting (uses :has for clean selection) */
+@supports selector(:has(*)){
+    .page-list .list tr:has(td.level.active) .level-card{border-color:var(--gd-accent-muted);box-shadow:0 8px 30px var(--gd-accent-glow)}
+    .page-list .list tr:has(td.level.active) .rank p{color:var(--gd-accent)}
+}
+
+/* Fallback highlight if :has unsupported: highlight the .level cell itself */
+.page-list .list .level.active .level-card{border-color:var(--gd-accent-muted);box-shadow:0 8px 30px var(--gd-accent-glow)}
+
+/* Video HUD frame */
+.video-frame{position:relative;display:block;padding:8px;border-radius:4px;border:3px solid var(--gd-accent);background:linear-gradient(180deg, rgba(0,0,0,0.18), transparent);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+.video-frame .video-label{position:absolute;left:10px;top:6px;color:var(--muted);background:transparent;padding:2px 6px;border-radius:2px;font-family:var(--font-display);font-size:0.72rem}
+.video-frame .video{width:100%;height:calc(100%);display:block;border:0;border-radius:2px;overflow:hidden}
 .page-list .list .level.error button {
     color: var(--color-error);
     cursor: not-allowed;

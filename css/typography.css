@@ -1,7 +1,7 @@
 h1,
 .type-h1,
 .type-headline-lg{
-    font-family: 'Lexend Deca', Inter, sans-serif;
+    font-family:var(--font-display);
     font-size:clamp(32px,5.2vw,52px);
     line-height:1.02;
     font-weight:800;
@@ -17,7 +17,7 @@ h1::before,
 h2,
 .type-h2,
 .type-headline-md{
-    font-family: 'Lexend Deca', Inter, sans-serif;
+    font-family:var(--font-display);
     font-size:clamp(20px,3.2vw,34px);
     line-height:1.12;
     font-weight:700;
@@ -207,7 +207,11 @@ input[type="number"],
 }
 
 p,
-.type-body{font-family:Inter, 'Lexend Deca', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;font-size:clamp(14px,1.8vw,17px);line-height:1.6;color:var(--text);font-weight:500;-webkit-font-smoothing:antialiased}
+.type-body{font-family:var(--font-body);font-size:clamp(14px,1.8vw,17px);line-height:1.6;color:var(--text);font-weight:500;-webkit-font-smoothing:antialiased}
+
+/* small UI label */
+.type-label-lg{font-family:var(--font-display);font-weight:600}
+.type-label-md,.type-label-sm{font-family:var(--font-body)}
 p::before,
 .type-body::before {
     content: "";
